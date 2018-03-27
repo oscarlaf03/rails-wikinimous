@@ -1,0 +1,21 @@
+<h1>Current Articles</h1>
+<ul class="articles-list">
+  <% @articles.each do |element| %>
+  <div class="row">
+    <li class="articles-list-element">
+      <div class=" col-xs-offset-2 col-xs-4">
+        <%= link_to element.title, article_path(element) %>
+      </div>
+      <div class="col-xs-2">
+        <%= link_to "Edit info", edit_article_path(element), class: 'btn btn-info btn-xs' %>
+      </div>
+      <div class="col-xs-2 ">
+        <%= link_to "Delete", article_path(element), method: :delete, data: { confirm: "There will be no way to undo this"}, class: 'btn btn-danger btn-xs' %>
+      </div>
+    </li>
+  </div>
+  <% end %>
+</ul>
+<div class="fixed-bottom-bar">
+  <%= link_to "Add new Article", new_article_path, class: 'btn btn-primary btn-lg' %>
+</div>

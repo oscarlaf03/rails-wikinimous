@@ -1,0 +1,44 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main-wrapper {
+  margin: 0 auto;
+  height: 100%;
+
+}
+
+.font-fancy {
+  font-style: italic;
+  color: #9fabb7;
+}
+
+.main-container {
+  text-align: center;
+  padding: 30px;
+  margin: 0 auto;
+  margin-top: 1%;
+  height:50%;
+  max-width: 70%;
+
+}
+
+.main-container li {
+  list-style: none;
+  margin: 10px;
+  padding:5px;
+}
+
+.fixed-bottom-bar {
+  text-align:center;
+  overflow: hidden;
+  min-width: 70%;
+  position: fixed; /* Set the navbar to fixed position */
+  bottom: 0; /* Position the navbar at the top of the page */
+  margin: 5px;
+  padding: 10px;
+  background-color: white;
+  z-index: 1000;
+  }
+
+
